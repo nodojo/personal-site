@@ -1,7 +1,7 @@
 {
-  "name": "nodojo",
+  "name": "home",
   "version": "0.0.1",
-  "description": "npm config file for nodojo",
+  "description": "npm config file for home",
   "main": "",
   "scripts": {
     "build": "node build/build.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/noDojo/home.git"
   },
-  "author": "Kun Jia",
+  "author": "Jamie Leviner",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/noDojo/home/issues"
