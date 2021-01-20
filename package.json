@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noDojo/noDojo.github.io.git"
+    "url": "git+https://github.com/noDojo/home.git"
   },
   "author": "Kun Jia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noDojo/noDojo.github.io/issues"
+    "url": "https://github.com/noDojo/home/issues"
   },
-  "homepage": "https://github.com/noDojo/noDojo.github.io#readme",
+  "homepage": "https://github.com/noDojo/home#readme",
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.6",
