@@ -1,7 +1,7 @@
 {
-  "name": "home",
+  "name": "personal-site",
   "version": "0.0.1",
-  "description": "npm config file for home",
+  "description": "npm config file for personal-site",
   "main": "",
   "scripts": {
     "build": "node build/build.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noDojo/home.git"
+    "url": "git+https://github.com/noDojo/personal-site.git"
   },
   "author": "Jamie Leviner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noDojo/home/issues"
+    "url": "https://github.com/noDojo/personal-site/issues"
   },
-  "homepage": "https://github.com/noDojo/home#readme",
+  "homepage": "https://github.com/noDojo/personal-site#readme",
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.6",
