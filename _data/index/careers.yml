@@ -12,7 +12,7 @@
   job:
     detail: Software Engineer
     i18n: company_a_job
-  icon: fa-plus-square
+  icon: fa-laptop
   present: true
 
 - name:
@@ -27,4 +27,4 @@
   job:
     detail: Student
     i18n: company_b_job
-  icon: fa-plus-square
+  icon: fa-graduation-cap
