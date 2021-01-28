@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: JavaScript, VueJS, C#/ASP.NET, Go, jQuery, CSS/SCSS/LESS
-percentage: 85, 85, 70, 65, 80, 90
+aspects: JavaScript, VueJS, Go, C#/.NET, jQuery, CSS
+percentage: 85, 85, 65, 70, 80, 90

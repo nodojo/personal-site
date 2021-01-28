@@ -6,8 +6,6 @@ description: Jamie's blog,use Jekyll and github pages.
 keywords: Jamie,noDojo,blog,Jekyll,github,gh-pages
 # baseurl: /home # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://www.jamieleviner.com # url should be 'http://<github_username>.github.io/homepage' as before
-# url: https://nodojo.github.io/home  # url should be 'http://<github_username>.github.io/homepage' as before
-# url: http://127.0.0.1:4000
 img_path: /static/assets/img/blog # url should be '/homepage/static/assets/img/blog' as before
 # img_path: /home/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
@@ -23,13 +21,13 @@ author: # change following line to your infomation.
   # twitter_username:   # Leave blank if you don't have now
   email: levinerjamie@gmail.com # Leave blank if you don't have now
   # cv: # An online CV can be printed as PDF, leave blank if you don't have now
-  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  # new svg reference: https://svgporn.com/
   skill_icon1:
-    - name: icon-apache
-    - name: fa-linux
+    - name: static/assets/img/icons/gopher.svg
+    - name: static/assets/img/icons/javascript.svg
   skill_icon2:
-    - name: fa-linux
-    - name: icon-apache
+    - name: static/assets/img/icons/vue.svg
+    - name: static/assets/img/icons/c-sharp.svg
   desc: I am a software engineer with years of full stack experience. I am a proficient front-end developer,
     but I am diligently working towards backend proficiency. I am a proud father and a lucky husband.
     I have interests in game theory, investing, Stoicism, and many other areas. # Describe yourself.

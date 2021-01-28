@@ -1514,6 +1514,10 @@ a.close-canvas-menu {
   height: 100%;
 }
 
+.p-n {
+  padding: 0 !important;
+}
+
 .p-xs {
   padding: 10px;
 }
@@ -2631,6 +2635,9 @@ body {
     img {
       margin: auto;
     }
+  }
+  .social-icon li {
+    padding: 5px;
   }
   .social-icon a {
     background: #3385FF;
