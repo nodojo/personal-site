@@ -1,19 +1,21 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jamie
-  i18n: Jamie
+- name: Box Ready
+  i18n: box ready
   gh_user: noDojo
-  repo: example
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+  repo: Box-Ready-Android
+  img: /static/assets/img/box_ready_launch_blue.png
+  desc: This was my senior project for computer science in 2014. It is an android application
+    that, until just recently, was available on Google Play.
 
-- name: Python
-  i18n: cpython
-  gh_user: python
-  repo: cpython
-  img: /static/assets/img/landing/python.png
-  desc: This project is other's project. I use another request to get repo's information.
+- name: Bar Buddy
+  i18n: bar buddy
+  gh_user: noDojo
+  repo: bar-buddy
+  img: /static/assets/img/beer_icon.png
+  desc: Bar Buddy is an android app that helps you keep tab of the drinks you've purchased.
+    It also sets a geofence around the bar and alerts you if you leave without closing your tab.
 
 - name: Google
   i18n: google
