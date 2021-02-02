@@ -28,9 +28,11 @@ author: # change following line to your infomation.
   skill_icon2:
     - name: static/assets/img/icons/vue.svg
     - name: static/assets/img/icons/c-sharp.svg
-  desc: I am a software engineer with years of full stack experience. I am a proficient front-end developer,
-    but I am diligently working towards backend proficiency. I am a proud father and a lucky husband.
-    I have interests in game theory, investing, Stoicism, and many other areas. # Describe yourself.
+  desc: I work as a full stack software engineer with a focus on front-end development.
+    I have a strong interest in being part of a culture that enables and empowers the people involved.
+  # desc: I am a software engineer with years of full stack experience. I am a proficient front-end developer,
+  #   but I am diligently working towards backend proficiency. I am a proud father and a lucky husband.
+  #   I have interests in game theory, investing, Stoicism, and many other areas. # Describe yourself.
 
 # comment
 # disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
