@@ -17,8 +17,8 @@
   desc: Bar Buddy is an android app that helps you keep tab of the drinks you've purchased.
     It also sets a geofence around the bar and alerts you if you leave without closing your tab.
 
-- name: Google
-  i18n: google
-  url: https://google.com
-  img: /static/assets/img/landing/google.png
-  desc: This is another project.
+# - name: Google
+#   i18n: google
+#   url: https://google.com
+#   img: /static/assets/img/landing/google.png
+#   desc: This is another project.
