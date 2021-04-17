@@ -4,27 +4,55 @@
     detail: ACS Technologies
     i18n: company_a
   desc:
-    detail: I work as a software engineer with a concentration on front-end architecture, frameworks, and tools.
+    detail: I work as a senior-level software engineer with a concentration on front-end architecture, frameworks, and tools.
     i18n: company_a_desc
   date:
     detail: May 2015
     i18n: company_a_date
   job:
-    detail: Software Engineer
+    detail: Senior Software Engineer
     i18n: company_a_job
   icon: fa-laptop
   present: true
 
 - name:
-    detail: Graduation
+    detail: ACS Technologies
     i18n: company_b
   desc:
-    detail: In December of 2014, I graduated from Francis Marion University with a BS in Computer Science and a minor in Applied Mathematics.
+    detail: I work as a software engineer with a concentration on front-end architecture, frameworks, and tools.
     i18n: company_b_desc
   date:
-    detail: December 2014
+    detail: May 2015
     i18n: company_b_date
   job:
-    detail: Student
+    detail: Software Engineer
     i18n: company_b_job
+  icon: fa-laptop
+
+- name:
+    detail: ACS Technologies
+    i18n: company_c
+  desc:
+    detail: I work as a junior software engineer with a concentration on front-end architecture, frameworks, and tools.
+    i18n: company_c_desc
+  date:
+    detail: May 2015
+    i18n: company_c_date
+  job:
+    detail: Junior Software Engineer
+    i18n: company_c_job
+  icon: fa-laptop
+
+- name:
+    detail: Graduation
+    i18n: company_d
+  desc:
+    detail: In December of 2014, I graduated from Francis Marion University with a BS in Computer Science and a minor in Applied Mathematics.
+    i18n: company_d_desc
+  date:
+    detail: December 2014
+    i18n: company_d_date
+  job:
+    detail: Student
+    i18n: company_d_job
   icon: fa-graduation-cap
