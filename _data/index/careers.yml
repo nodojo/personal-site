@@ -1,13 +1,13 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: ACS Technologies
+    detail: ACS Technologies - Senior Software Engineer
     i18n: company_a
   desc:
-    detail: I work as a senior-level software engineer with a concentration on front-end architecture, frameworks, and tools.
+    detail: I work as a senior software engineer with a concentration on front-end architecture, frameworks, and tools.
     i18n: company_a_desc
   date:
-    detail: May 2015
+    detail: April 2021
     i18n: company_a_date
   job:
     detail: Senior Software Engineer
@@ -16,13 +16,13 @@
   present: true
 
 - name:
-    detail: ACS Technologies
+    detail: ACS Technologies - Software Engineer
     i18n: company_b
   desc:
-    detail: I work as a software engineer with a concentration on front-end architecture, frameworks, and tools.
+    detail: My primary focus during my time at software engineer was to become a true full-stack developer. I also intentionally and proactively sought to improve both my communication and leadership skills
     i18n: company_b_desc
   date:
-    detail: May 2015
+    detail: July 2017
     i18n: company_b_date
   job:
     detail: Software Engineer
@@ -30,10 +30,10 @@
   icon: fa-laptop
 
 - name:
-    detail: ACS Technologies
+    detail: ACS Technologies - Junior Software Engineer
     i18n: company_c
   desc:
-    detail: I work as a junior software engineer with a concentration on front-end architecture, frameworks, and tools.
+    detail: As a junior software engineer, most of my time was spent learning how to build and maintain front-end plugins, components, and styles for global use.
     i18n: company_c_desc
   date:
     detail: May 2015
