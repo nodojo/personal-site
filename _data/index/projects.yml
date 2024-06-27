@@ -3,7 +3,7 @@
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 - name: Box Ready
   i18n: box ready
-  gh_user: noDojo
+  gh_user: nodojo
   repo: Box-Ready-Android
   img: /static/assets/img/box_ready_launch_blue.png
   desc: This was my senior project for computer science in 2014. It is an android application
@@ -11,7 +11,7 @@
 
 - name: Bar Buddy
   i18n: bar buddy
-  gh_user: noDojo
+  gh_user: nodojo
   repo: bar-buddy
   img: /static/assets/img/beer_icon.png
   desc: Bar Buddy is an android app that helps you keep tab of the drinks you've purchased.

@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noDojo/personal-site.git"
+    "url": "git+https://github.com/nodojo/personal-site.git"
   },
   "author": "Jamie Leviner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noDojo/personal-site/issues"
+    "url": "https://github.com/nodojo/personal-site/issues"
   },
-  "homepage": "https://github.com/noDojo/personal-site#readme",
+  "homepage": "https://github.com/nodojo/personal-site#readme",
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.6",
