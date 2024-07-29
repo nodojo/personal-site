@@ -3,4 +3,49 @@ layout: blog
 title: Life
 permalink: /life/
 ---
-{% include category.html %}
+
+<script type="text/javascript">
+  $(function(){
+    /* initialize the jPages plugin */
+    $("div.pag-holder").jPages({
+        containerID  : "pag-itemContainer",
+        perPage      : 5,  /* num of items per page */
+        startPage    : 1,
+        startRange   : 1,
+        midRange     : 3,
+        endRange     : 1
+    });
+
+    $('.ibox-content').on('click', function () {
+      $(this).children('.vote-title').toggleClass('hidden');
+    });
+  });
+</script>
+
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <div class="navy-line"></div>
+    <h1>Flash Cards</h1>
+  </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight blog">
+  <div class="row">
+    <ul id="pag-itemContainer" style="list-style:none;">
+      {% assign counter = 0 %}
+      {% for card in site.data.flash_cards %}
+      {% assign counter = counter | plus: 1 %}
+      <li>
+          <div class="col-lg-8 col-lg-offset-2">
+              <div class="">
+                  <div class="ibox-content">
+                    <h2>{{ card.question }}</h2>
+                    <div class="vote-title hidden" style="margin-left: 0;">{{ card.answer }}</div>
+                  </div>
+              </div>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% include pagination.html %}
+  </div>
+</div>
