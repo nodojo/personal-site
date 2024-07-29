@@ -1,0 +1,150 @@
+
+- question: What is ASP.NET Core?
+  answer: ASP.NET Core is an open-source, cross-platform framework for building modern, cloud-based, and internet-connected applications, including web applications, APIs, and microservices. It is a significant redesign of ASP.NET, providing a modular and high-performance framework that is optimized for developer productivity.
+
+- question: How does ASP.NET Core differ from previous versions of ASP.NET?
+  answer: ASP.NET Core differs from previous versions primarily in terms of its architecture, cross-platform support, performance improvements, and modularity. It is designed to be lightweight, modular, and highly extensible, making it suitable for various applications and deployment scenarios.
+
+- question: Explain the concept of Middleware in ASP.NET Core.
+  answer: Middleware in ASP.NET Core is software components that are used to handle requests and responses in the request processing pipeline. Each middleware component in the pipeline can inspect, modify, or terminate the request or response as it flows through the pipeline, allowing developers to add custom logic for various tasks such as authentication, logging, compression, and caching.
+
+- question: What is the Startup class in ASP.NET Core, and what is its significance?
+  answer: The Startup class in ASP.NET Core is a central component that configures the application's services and middleware during startup. It contains methods such as ConfigureServices() to configure services (dependency injection) and Configure() to configure the middleware pipeline. It's significant because it provides a structured way to initialize and configure the application, making it easier to manage application startup and configuration.
+
+- question: Differentiate between ASP.NET Core MVC and ASP.NET Core Web API.
+  answer: ASP.NET Core MVC is a framework for building web applications following the Model-View-Controller architectural pattern, primarily used for creating UI-based applications. ASP.NET Core Web API, on the other hand, is used to build HTTP-based APIs that clients can use for web applications, mobile apps, and other services. While MVC deals with views, controllers, and models, Web API focuses on endpoints that return data in various formats like JSON or XML.
+
+- question: What are Tag Helpers in ASP.NET Core?
+  answer: Tag Helpers in ASP.NET Core are a new feature that simplifies the process of creating and working with HTML elements in Razor views. They allow developers to use HTML-like syntax with server-side logic to generate HTML markup. Tag Helpers make writing and maintaining views easier by reducing the amount of inline C# code and improving the readability of the markup.
+
+- question: Describe Dependency Injection in ASP.NET Core.
+  answer: Dependency Injection (DI) in ASP.NET Core is a design pattern and technique used to manage the dependencies of components within an application. It allows classes to define their dependencies through constructor parameters or properties, and a container (provided by ASP.NET Core) resolves these dependencies and injects them into the classes when needed. DI promotes loose coupling, testability, and maintainability by decoupling the creation and management of dependencies from the classes that use them.
+
+- question: How does Routing work in ASP.NET Core?
+  answer: Routing in ASP.NET Core is the process of matching incoming HTTP requests to endpoints in the application. It is configured in the Startup class using the UseRouting() method and defines patterns for matching URLs to route templates. When a request is received, the routing middleware examines the request's URL and attempts to match it to a registered route. The corresponding endpoint is invoked to handle the request if a match is found.
+
+- question: What is Razor Pages in ASP.NET Core?
+  answer: Razor Pages is a new feature introduced in ASP.NET Core that simplifies the process of building web applications with a focus on UI and page-centric development. It allows developers to define page-specific models and handlers directly within the Razor (.cshtml) files, eliminating the need for separate controller classes. Razor Pages promotes a more streamlined and intuitive approach to building web applications, especially for simpler scenarios where the MVC pattern might be overly complex.
+
+- question: Explain the concept of Model-View-Controller (MVC) in ASP.NET Core.
+  answer: MVC is a software architectural pattern that divides an application into three main components - Model, View, and Controller. In ASP.NET Core, the Model represents the data and business logic, the View is responsible for displaying the user interface, and the Controller handles user input, processes requests, and interacts with both the Model and View.
+
+- question: How do you handle user authentication and authorization in ASP.NET Core?
+  answer: ASP.NET Core provides built-in authentication and authorization middleware to handle user authentication and authorization. Authentication verifies the identity of users, while authorization controls what resources they can access. This can be implemented using various authentication schemes such as cookies, JWT tokens, or external providers like OAuth.
+
+- question: What is Entity Framework Core, and how does it relate to ASP.NET Core?
+  answer: Entity Framework Core (EF Core) is an Object-Relational Mapping (ORM) framework provided by Microsoft. It allows developers to work with databases using .NET objects. In ASP.NET Core, EF Core is commonly used for data access, allowing developers to interact with databases more object-oriented, thus reducing the amount of boilerplate code needed for data operations.
+
+- question: What is the difference between TempData, ViewBag, and ViewData in ASP.NET Core?
+  answer: TempData, ViewBag, and ViewData are mechanisms for passing data between controllers and views in ASP.NET Core. TempData persists data for the duration of an HTTP request and subsequent redirect, ViewBag is a dynamic property used to pass data from controllers to views during the current request, and ViewData is similar to ViewBag but uses a dictionary to pass data from controllers to views.
+
+- question: How do you handle logging in ASP.NET Core?
+  answer: ASP.NET Core provides built-in logging capabilities through the Microsoft.Extensions.Logging framework. Developers can configure logging providers such as Console, Debug, EventSource, File, or third-party providers to log messages at different levels of severity. Logging can be configured in the Startup.cs file or through configuration settings.
+
+- question: Explain the concept of Content Negotiation in ASP.NET Core.
+  answer: Content Negotiation is the process of determining the best content type (e.g., JSON, XML, HTML) to return to a client based on its preferences and capabilities. In ASP.NET Core, Content Negotiation is handled automatically by the framework through MediaTypeFormatters, which serialize and deserialize data based on the content type requested by the client.
+
+- question: Discuss the benefits of using ASP.NET Core over ASP.NET Framework.
+  answer: Some benefits of ASP.NET Core over ASP.NET Framework include cross-platform support, improved performance, modularity, and easier deployment with Docker and cloud platforms. ASP.NET Core has a smaller footprint and supports modern development practices such as dependency injection and middleware pipelines.
+
+- question: How do you handle errors and exceptions in ASP.NET Core?
+  answer: ASP.NET Core provides middleware for handling errors and exceptions globally or at the application level. Developers can use built-in middleware like UseExceptionHandler to catch unhandled exceptions and return appropriate error responses. Additionally, custom middleware can be implemented to handle specific error scenarios.
+
+- question: What is Kestrel in the context of ASP.NET Core?
+  answer: Kestrel is a lightweight, cross-platform web server that comes bundled with ASP.NET Core. It's the default web server used by ASP.NET Core applications and is designed for high performance. Kestrel can also be used as an edge server or a reverse proxy in combination with other web servers like Nginx or IIS.
+
+- question: How do you deploy an ASP.NET Core application?
+  answer: ASP.NET Core applications can be deployed using various methods, including - Publishing directly from Visual Studio, Using the dotnet CLI to publish the application as a self-contained or framework-dependent package, Deploying to cloud platforms like Azure, AWS, or Google Cloud Platform using platform-specific deployment tools or Docker containers, and Deploying to on-premises servers via FTP, SSH, or other deployment methods.
+
+- question: Discuss the role of ASP.NET Core in building microservices architecture.
+  answer: ASP.NET Core is an ideal framework for building microservices due to its lightweight, modular, and cross-platform nature. It supports the development of small, independent, and scalable services that can be developed, deployed, and scaled independently. ASP.NET Core's built-in support for configuration, dependency injection, and various data storage options make building resilient and maintainable microservices easier. Additionally, its integration with Docker containers facilitates the deployment and management of microservices in various environments.
+
+- question: Explain the concept of Routing in ASP.NET Core.
+  answer: Routing in ASP.NET Core is the process of mapping incoming requests to the appropriate controllers and actions. It is configured in the Startup.cs file and enables the application to understand URLs, thereby determining how requests are handled. ASP.NET Core supports both conventional routing, which uses predefined patterns, and attribute routing, which allows for more granular control by decorating controllers and actions with attributes that define routes.
+
+- question: What is the difference between ASP.NET Core and ASP.NET MVC?
+  answer: ASP.NET Core is a redesign of ASP.NET with a focus on cloud, modularity, and cross-platform applications. It's a framework for building web apps and services, IoT apps, and mobile backends. ASP.NET MVC, on the other hand, is a part of the older ASP.NET framework designed specifically for building web applications using the Model-View-Controller pattern. While ASP.NET MVC is only for web applications, ASP.NET Core encompasses MVC as one of its components and extends support to APIs, Razor Pages, real-time communications with SignalR, and more.
+
+- question: How do you return JSON from an ASP.NET Core Web API?
+  answer: To return JSON from an ASP.NET Core Web API, you can use the JsonResult type or return a model or an anonymous type from your controller action. ASP.NET Core automatically serializes the object to JSON using the configured JSON serializer (System.Text.Json by default). Alternatively, just returning the object works as well, thanks to the framework's content negotiation process.
+
+- question: What is the role of the ConfigureServices method in the Startup class?
+  answer: The ConfigureServices method in the Startup class is where you configure the application's services. This includes setting up dependency injection for application services, adding framework services, and configuring options. Services added here are available throughout the application via dependency injection.
+
+- question: How do you enable Cross-Origin Resource Sharing (CORS) in ASP.NET Core?
+  answer: To enable CORS in ASP.NET Core, you need to add CORS services in the ConfigureServices method of the Startup class using services.AddCors(). Then, configure the CORS policy with the desired settings, such as which origins to allow. Apply the policy globally or on a per-endpoint basis using the UseCors middleware in the Configure method or the [EnableCors] attribute on controllers or actions, respectively.
+
+- question: Explain the concept of Dependency Injection and how it's implemented in ASP.NET Core.
+  answer: Dependency Injection (DI) is a design pattern that allows for decoupling components and their dependencies, making the system more modular and testable. ASP.NET Core has built-in support for DI and is used extensively. You configure services using the ConfigureServices method of the Startup class, and the framework provides them where needed through constructors or other means. This eliminates the need for manual creation and management of object lifecycles.
+
+- question: What is the purpose of the appsettings.json file in an ASP.NET Core application?
+  answer: The appsettings.json file in an ASP.NET Core application is used for configuration. It stores settings like connection strings, application settings, and environment-specific configurations. ASP.NET Core's configuration system can read settings from various sources, and appsettings.json serves as a convenient place to store application-level configurations that can be easily accessed throughout the application.
+
+- question: How do you implement validation in ASP.NET Core?
+  answer: Validation in ASP.NET Core can be implemented using data annotations and Fluent Validation. Data annotations are attributes applied to model properties to specify validation rules (e.g., [Required], [StringLength(100)]). ASP.NET Core automatically checks these annotations when model binding and returns appropriate validation responses. Fluent Validation is a library that allows for more complex validations to be configured using a fluent interface, offering a powerful alternative to data annotations.
+
+- question: What is the role of the IActionResult interface in ASP.NET Core?
+  answer: The IActionResult interface is used to represent the result of an action method in ASP.NET Core. It provides a way to encapsulate different types of action results into a single return type. Implementations of IActionResult can represent various HTTP responses such as status codes, JSON data, views, file downloads, and more. This abstraction allows for flexible and maintainable code within controller actions.
+
+- question: How do you handle sessions in ASP.NET Core?
+  answer: In ASP.NET Core, sessions are handled by using the session middleware. To use sessions, you first need to add the session middleware to the services collection in the ConfigureServices method of the Startup class using services.AddSession(). Then, you need to configure the application to use sessions by calling app.UseSession() in the Configure method before any middleware that might write to the response. You can store and retrieve session data using the HttpContext.Session property, which provides methods like SetString, GetString, SetInt32, and GetInt32.
+
+- question: Explain the concept of Middleware pipeline in ASP.NET Core.
+  answer: The Middleware pipeline in ASP.NET Core is a mechanism for how HTTP requests are processed by the web application. Each middleware component in the pipeline is responsible for invoking the next middleware in the sequence or short-circuiting the pipeline. Middleware can perform a variety of tasks, such as authentication, routing, session management, and more. You configure the middleware pipeline in the Configure method of the Startup class by chaining calls to the app.Use<Middleware>(). The order in which middleware components are added to the pipeline defines the order of execution for request processing and response generation.
+
+- question: What is the role of the wwwroot folder in an ASP.NET Core application?
+  answer: The wwwroot folder in an ASP.NET Core application is designated as the root web directory. It contains static files like HTML, CSS, JavaScript, and image files. These files are served directly to clients and are accessible via a path relative to the web root. ASP.NET Core applications use the Static Files Middleware (app.UseStaticFiles()) to serve static files from the wwwroot folder.
+
+- question: How do you handle file uploads in ASP.NET Core?
+  answer: File uploads in ASP.NET Core are handled using the IFormFile interface. In an action method, you can include parameters of type IFormFile to bind uploaded files. You can then read the file stream and save it to a server location using file I/O operations. It's important to validate the file size and type to prevent malicious uploads. ASP.NET Core also supports streaming large files to minimize memory usage.
+
+- question: Discuss the differences between .NET Core and .NET Framework.
+  answer: .NET Core is a cross-platform, open-source framework for building modern, cloud-based web applications. It supports Windows, Linux, and macOS. .NET Framework, on the other hand, is a Windows-only framework designed for building desktop applications and web services. .NET Core offers improved performance, side-by-side versioning, and a modular architecture. .NET Framework has a broader API surface and supports technologies like WebForms, WCF, and WF that are not available in .NET Core. With the introduction of .NET 5 and beyond, Microsoft aims to unify the .NET platforms.
+
+- question: What is the purpose of ConfigureServices and Configure methods in the Startup class?
+  answer: The ConfigureServices method in the Startup class is used to configure services needed by the application, such as MVC, Entity Framework Core, identity services, and more. This method is where you add services to the Dependency Injection (DI) container. The Configure method defines how the app responds to HTTP requests, essentially configuring the middleware pipeline. This is where you call UseRouting, UseAuthentication, UseAuthorization, UseEndpoints, and other Use methods to add middleware components to the application.
+
+- question: How do you configure logging in ASP.NET Core?
+  answer: Logging in ASP.NET Core is configured in the Program.cs file or the Startup class, using the ILoggerFactory or the built-in DI to inject ILogger<T> into your components. ASP.NET Core supports various logging providers, such as console, debug, event source, and third-party loggers like Serilog or NLog. You can configure logging levels and other settings through the appsettings.json file or programmatically in code.
+
+- question: Explain the concept of Model Binding in ASP.NET Core.
+  answer: Model Binding in ASP.NET Core automatically maps data from HTTP requests to action method parameters. When a request is made, model binding goes through the incoming data (from the form values, query string, route data, and JSON POST body), and attempts to bind it to the parameters of the action method being called. This simplifies the code for handling requests by abstracting the manual extraction of data.
+
+- question: What is the difference between TempData and Session in ASP.NET Core?
+  answer: TempData is used to pass data from one request to another, making it ideal for redirect scenarios. TempData is backed by session state but is meant for temporary data, as it's cleared out after it's read in the subsequent request. Session, on the other hand, is used to store user data for the duration of the user's session on the website. It can store data across multiple requests from the same browser session. Unlike TempData, the session state doesn't clear out data after it's accessed.
+
+- question: How do you use Dependency Injection with Entity Framework Core in ASP.NET Core?
+  answer: In ASP.NET Core, Dependency Injection (DI) is used to inject instances of DbContext (from Entity Framework Core) into controllers or other services. To use DI with Entity Framework Core, you first register your DbContext with the DI container in the ConfigureServices method of the Startup class using services.AddDbContext<YourDbContext>(options => options.UseSqlServer(“YourConnectionString”)). This enables ASP.NET Core to inject the DbContext into components that require it, promoting a decoupled architecture and making your application easier to test and maintain.
+
+- question: Advantages of using Entity Framework Core over Entity Framework 6.x in ASP.NET Core.
+  answer: come back to this after implementing functionality that allows answers to include bullet point lists
+
+- question: How do you configure authentication in ASP.NET Core?
+  answer: Authentication in ASP.NET Core is typically configured in the Startup.cs file within the ConfigureServices method. You can configure various authentication schemes such as cookie-based authentication, JWT (JSON Web Tokens), or external authentication providers (Google, Facebook, etc.) using the AddAuthentication method. The specific setup will depend on the chosen authentication scheme, but it generally involves setting up the authentication service and configuring it with the necessary parameters, such as keys, tokens, or other credentials.
+
+- question: What is the purpose of the UseAuthentication and UseAuthorization methods in ASP.NET Core?
+  answer: come back to this after implementing functionality that allows answers to include bullet point lists
+
+- question: Explain the concept of Razor syntax in ASP.NET Core.
+  answer: Razor syntax is a markup syntax that blends C# code with HTML. It allows developers to generate web content with an ASP.NET Core view dynamically. Razor minimizes the number of characters and keystrokes required in a file and enables a fast, fluid coding workflow. With Razor, you can easily incorporate C# logic directly within an HTML file, making it powerful for developing dynamic web pages efficiently.
+
+- question: How do you implement custom middleware in ASP.NET Core?
+  answer: Custom middleware in ASP.NET Core can be implemented by defining a class with an Invoke or InvokeAsync method that takes HttpContext as a parameter and returns a Task. This class is then registered in the application’s request pipeline within the Configure method in Startup.cs using the UseMiddleware<T> extension method, where T is your custom middleware class. Custom middleware can perform various tasks such as logging, request/response modification, authentication, etc.
+
+- question: Discuss the benefits of using Razor Pages over MVC in ASP.NET Core.
+  answer: come back to this after implementing functionality that allows answers to include bullet point lists
+
+- question: How do you handle caching in ASP.NET Core?
+  answer: ASP.NET Core supports several caching techniques, including in-memory caching, distributed caching, and response caching. In-memory caching involves storing data within the memory of the web server, which is fast but local to that server. Distributed caching extends this by storing data across multiple servers or using a distributed cache system like Redis or SQL Server, which is useful in a load-balanced environment. Response caching involves storing the output of a request-response cycle, which can significantly reduce the amount of work the server needs to do to generate a response.
+
+- question: What is the difference between TempData and ViewData in ASP.NET Core?
+  answer: TempData is used to pass data from one request to another, making it suitable for redirect scenarios. TempData is kept only for the duration of two requests before it is automatically deleted. It is typically used to store one-time messages like success or error messages. ViewData is a dictionary object that is used to pass data from a controller to a view, and it is available only during the current request. If the page is redirected, ViewData will be cleared. It requires typecasting for complex data types and does not provide compile-time type checking.
+
+- question: How do you implement globalization and localization in ASP.NET Core?
+  answer: Globalization and localization in ASP.NET Core involve adapting an application to support different languages and cultures. This can be implemented by adding resource files for each language and culture you want to support, configuring services in Startup.cs to add localization support, and using the IStringLocalizer<T> interface in your application to retrieve localized strings. Additionally, you can use IViewLocalizer for views to achieve view-specific localization.
+
+- question: What are the different hosting options available for ASP.NET Core applications?
+  answer: come back to this after implementing functionality that allows answers to include bullet point lists
+
+- question: Explain the concept of environment-specific configuration in ASP.NET Core.
+  answer: ASP.NET Core supports environment-specific configuration, allowing developers to have different configurations (e.g., for development, staging, and production) without changing the code. This is achieved using multiple appsettings files (e.g., appsettings.Development.json, appsettings.Production.json) and environment variables. The framework automatically loads the appropriate settings based on the current environment, which can be set through the ASPNETCORE_ENVIRONMENT environment variable. This feature simplifies managing application behavior across different deployment environments, improving the development workflow and deployment process.
