@@ -20,6 +20,12 @@ unnecessary to run the command `jekyll build` before it.
 jekyll serve
 ```
 
+To automatically refresh the browser with every change, run the command:
+
+```bash
+jekyll serve --livereload
+```
+
 To build the project so that it is ready for deployment, run:
 
 ```bash
