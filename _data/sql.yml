@@ -1,0 +1,84 @@
+
+- question: What is RDBMS?
+  answer: Relational Database Management Systems (RDBMS) are database management systems that maintain data records and indices in tables. Relationships may be created and maintained across and among the data and tables. In a relational database, relationships between data items are expressed by means of tables. Interdependencies among these tables are expressed by data values rather than by pointers. This allows for a high degree of data independence. An RDBMS has the capability to recombine the data items from different files, providing powerful tools for data usage.
+
+- question: What is normalization?
+  answer: Database normalization is a data design and organization process applied to data structures based on rules that help build relational databases. In relational database design the process of organizing data to minimize redundancy. Normalization usually involves dividing a database into two or more tables and defining relationships between the tables. The objective is to isolate data so that additions, deletions, and modifications of a field can be made in just one table and then propagated through the rest of the database via the defined relationships.
+
+- question: What is a Linked Server?
+  answer: Linked Servers is a concept in SQL Server by which we can add other SQL Server to a Group and query both the SQL Server DBS using T-SQL Statements. With a linked server, you can create very clean, easy to follow, SQL statements that allow remote data to be retrieved, joined, and combined with local data. Stored Procedure sp_addlinkedserver, sp_addlinkedsrvlogin will be used to add a new Linked Server.
+
+- question: What is Collation?
+  answer: Collation refers to a set of rules that determine how data is sorted and compared. Character data is sorted using rules that define the correct character sequence, with options for specifying case-sensitivity, accent marks, kana character types, and character width.
+
+- question: What is a NOLOCK?
+  answer: This is one of the most frequently asked SQL Interview Questions. Using the NOLOCK query optimizer hint is generally considered good practice in order to improve concurrency on a busy system. When the NOLOCK hint is included in a SELECT statement, no locks are taken when data is read. The result is a Dirty Read, which means that another process could be updating the data at the exact time you are reading it. There are no guarantees that your query will retrieve the most recent data. The advantage of performance is that your reading of data will not block updates from taking place, and updates will not block your reading of data. SELECT statements take Shared (Read) locks. This means that multiple SELECT statements are allowed simultaneous access, but other processes are blocked from modifying the data. The updates will queue until all the reads have completed, and reads requested after the update will wait for the updates to complete. The result of your system is the delay(blocking).
+
+- question: What is the SQL Profiler?
+  answer: This is one of the most frequently asked SQL Server Interview Questions. SQL Profiler is a graphical tool that allows system administrators to monitor events in an instance of Microsoft SQL Server. You can capture and save data about each event to a file or SQL Server table to analyze later. For example, you can monitor a production environment to see which stored procedures are hampering performance by executing too slowly. Use SQL Profiler to monitor only the events in which you are interested. If traces are becoming too large, you can filter them based on the information you want, so that only a subset of the event data is collected. Monitoring too many events adds overhead to the server and the monitoring process and can cause the trace file or trace table to grow very large, especially when the monitoring process takes place over a long period of time.
+
+- question: Which TCP/IP port does SQL Server run on? How can it be changed?
+  answer: SQL Server runs on port 1433. It can be changed from the Network Utility TCP/IP properties -> Port number. both on the client and the server.
+
+- question: What are the authentication modes in SQL Server? How can it be changed?
+  answer: Windows mode and mixed mode (SQL & Windows). To change authentication mode in SQL Server click Start, Programs, Microsoft SQL Server, and click SQL Enterprise Manager to run SQL Enterprise Manager from the Microsoft SQL Server program group. Select the server then from the Tools menu select SQL Server Configuration Properties, and choose the Security page.
+
+- question: Where are SQL server users names and passwords are stored in SQL server?
+  answer: They get stored in master DB in the sysxlogins table.
+
+- question: What is the SQL server agent?
+  answer: This is one of the frequently asked SQL Server Interview Questions. SQL Server agent plays an important role in the day-to-day tasks of a database administrator (DBA). It is often overlooked as one of the main tools for SQL Server management. Its purpose is to ease the implementation of tasks for the DBA, with its full-function scheduling engine, which allows you to schedule your own jobs and scripts.
+
+- question: What is log shipping?
+  answer: Log shipping is the process of automating the backup of database and transaction log files on a production SQL server and then restoring them onto a standby server. Enterprise Editions only supports log shipping. In log shipping, the transnational log file from one server is automatically updated into the backup database on the other server. If one server fails, the other server will have the same DB that can be used as the Disaster Recovery plan. The key feature of log shipping is that it will automatically backup transaction logs throughout the day and automatically restore them on the standby server at a defined interval.
+
+- question: What command do we use to rename a DB?
+  answer: sp_renamedb 'oldname', 'newname' - If someone is using DB it will not accept sp_renmaedb. In that case, first, bring DB to the single user using sp_dboptions. Use sp_renamedb to rename the database. Use sp_dboptions to bring the database to multi-user mode.
+
+- question: What are sp_configure commands and set commands?
+  answer: Use sp_configure to display or change server-level settings. To change database-level settings, use ALTER DATABASE. To change settings that affect only the current user session, use the SET statement.
+
+- question: What are three SQL keywords used to change or set someone's permissions?
+  answer: GRANT, DENY, and REVOKE.
+
+- question: What is De-normalization?
+  answer: De-normalization is the process of attempting to optimize the performance of a database by adding redundant data. It is sometimes necessary because current DBMSs implement the relational model poorly. A true relational DBMS would allow for a fully normalized database at the logical level while providing physical storage of data that is tuned for high performance. De-normalisation is a technique to move from higher to lower normal forms of database modeling in order to speed up database access.
+
+- question: What is Scheduled Jobs or What is a Scheduled Tasks?
+  answer: This is one of the frequently asked SQL Server Interview Questions. Scheduled tasks let users automate processes that run on regular or predictable cycles. Users can schedule administrative tasks, such as cube processing, to run during times of slow business activity. Users can also determine the order in which tasks run by creating job steps within a SQL Server Agent job. E.g. Back up the database, Update the Stats of Tables. Job steps give the user control over the flow of execution. If one job fails, the user can configure SQL Server Agent to continue to run the remaining tasks or to stop the execution.
+
+- question: What is BCP? When does it use?
+  answer: BulkCopy is a tool used to copy a huge amount of data from tables and views. BCP does not copy the structures same as source to destination.
+
+- question: How do you load large data to the SQL server database?
+  answer: BulkCopy is a tool used to copy a huge amount of data from tables. BULK INSERT command helps to Imports a data file into a database table or view in a user-specified format.
+
+- question: Can we rewrite subqueries into simple select statements or with joins? 
+  answer: Subqueries can often be re-written to use a standard outer join, resulting in faster performance. As we may know, an outer join uses the plus sign (+) operator to tell the database to return all non-matching rows with NULL values. Hence we combine the outer join with a NULL test in the WHERE clause to reproduce the result set without using a sub-query.
+
+- question: How to copy the tables, schema, and views from one SQL server to another? 
+  answer: Microsoft SQL Server 2000 Data Transformation Services (DTS) is a set of graphical tools and programmable objects that lets user extract, transform, and consolidate data from disparate sources into single or multiple destinations.
+
+- question: What is a Constraint in SQL Server?
+  answer: A constraint is a property that is assigned to a column or set of columns in a table that is used to enforce data integrity means it ensures that the data is going to store in a table is valid, consistent, and accurate.
+
+- question: How can we provide the default value for a column?
+  answer: The default, default value for any column is NULL, provided the column is not imposed with a NOT NULL constraint. At the time of creating the table, we have a chance of giving our own default value on the column. So that when we insert a record into the table without specifying a value to that column automatically the default value comes into the picture and inserted into the column whereas if we provide a value that provided only will be inserted.
+
+- question: What is SELF REFERENTIAL INTEGRITY?
+  answer: This is the same as the referential integrity we have learned earlier. In earlier cases, we are binding one column of a table with another column of another table whereas in self-referential integrity we bind a column of a table with another column of the same table i.e. both the foreign key and primary key will be present in one table only.
+
+- question: What is the difference between a primary key and a unique key?
+  answer: Both primary key and unique key enforces the uniqueness of the column on which they are defined. But by default primary key creates a unique clustered index on the column where are unique key creates a unique non-clustered index by default. Another major difference is that the primary key doesn't allow NULLs, but the unique key allows one NULL only.
+
+- question: Can a table have multiple unique, foreigh, and/or primary keys?
+  answer: A table can have multiple unique and foreign keys. However, a table can have only one primary key.
+
+- question: Can a unique key have null values? Can a primary key have null values?
+  answer: Unique key columns are allowed to hold a single NULL value. The values in a primary key column, however, can never be NULL.
+
+- question: Can a foreign key reference a non-primary key?
+  answer: Yes, a foreign key can actually reference a key that is not the primary key of a table. But a foreign key must reference a unique key.
+
+- question: Can a foreign key contain null values?
+  answer: Yes, a foreign key can hold NULL values. Because foreign keys can reference unique, non-primary keys - which can hold NULL values - this means that foreign keys can themselves hold NULL values as well.

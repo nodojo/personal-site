@@ -1,0 +1,33 @@
+
+- question: What is data binding in Angular?
+  answer: Data binding in Angular is a mechanism that allows you to establish a connection between the application's data and the DOM (Document Object Model). It ensures that changes in the application state are reflected in the UI, and vice versa. Angular supports one-way and two-way data binding.
+
+- question: What is dependency injection in Angular?
+  answer: Dependency injection (DI) is a design pattern used in Angular to manage the dependencies of a class or component. It is a way of providing the necessary objects (dependencies) that a component or service needs to function correctly. Angular's DI system allows you to create and inject these dependencies, making your application more modular, maintainable, and testable.
+
+- question: Explain the purpose of Angular services.
+  answer: Angular services are classes that encapsulate reusable business logic and data that can be shared across components, modules, and other parts of an Angular application. They provide a way to centralize and manage application state, handle data retrieval from external sources (e.g., APIs), and perform various operations. Services are a key part of Angular's architecture for promoting separation of concerns and code reusability.
+
+- question: What is providedIn in Angular services?
+  answer: The providedIn property in the @Injectable decorator of a service allows you to specify where the service should be provided. It determines the scope of the service and influences how it's created and used. Common values for providedIn include 'root' (for a singleton service provided at the application level) and specific module classes (for providing the service at a module level).
+
+- question: What is a singleton service in Angular?
+  answer: A singleton service in Angular is a service instance that is created only once for the entire application. It means that all components and parts of the application that inject the same singleton service will share the same instance. Singleton services are typically used for managing shared application state, caching data, or providing centralized functionality. To create a singleton service, you can use the providedIn - 'root' configuration in the @Injectable decorator of the service. This ensures that the service is provided at the root level of the application and is a single instance throughout the application's lifecycle.
+
+- question: What is Angular Router, and why is it used?
+  answer: Angular Router is a powerful feature of the Angular framework that enables the creation of single-page applications (SPAs) with multiple views or 'routes.' It provides a way to navigate between different parts of your application without requiring full page reloads. Angular Router is used for defining and managing the application's navigation and routing logic.
+
+- question: What is ActivatedRoute, and how is it used?
+  answer: ActivatedRoute is a service provided by Angular's router module that represents the currently activated route. It provides information about the route, including route parameters, query parameters, and route data. You can inject ActivatedRoute into a component or service and use it to access route-related information. For example, you can retrieve route parameters using ActivatedRoute to access data passed in the route's URL.
+
+- question: Explain the purpose of HttpClientModule.
+  answer: The HttpClientModule is a module in Angular that provides the HttpClient service, which is used for making HTTP requests. It includes features like request/response transformations, request cancellation, and error handling. It is essential to import HttpClientModule in your application's root module to make HTTP requests using Angular's HttpClient.
+
+- question: What are Observables in Angular, and why are they used?
+  answer: Observables are a fundamental concept in Angular and are part of the RxJS library. An Observable represents a stream of data or events that can be observed over time. They are used extensively in Angular for handling asynchronous operations such as HTTP requests, event handling, and more. Observables are preferred in Angular because they provide a way to work with data and events in a more declarative and composable manner, making it easier to manage complex asynchronous scenarios. They also allow for better handling of data over time, including handling errors and cancellations.
+
+- question: What is RxJS, and how does it relate to Observables?
+  answer: RxJS (Reactive Extensions for JavaScript) is a library for handling asynchronous data streams in a reactive and functional way. It provides operators and utilities for working with Observables, which are used for representing and managing these data streams. Observables are the core concept in RxJS. They represent the source of data or events, and RxJS provides a rich set of operators to manipulate, transform, filter, and combine these streams. Observables and RxJS are essential in Angular for handling asynchronous operations like HTTP requests and user interactions.
+
+- question: What are pipes in Angular?
+  answer: Pipes are a feature in Angular that allows you to transform or format data in your template HTML before rendering it to the view. They provide a way to apply simple transformations to your data, making it more user-friendly or visually appealing without modifying the underlying data. Pipes are commonly used for tasks like date formatting, number formatting, uppercase/lowercase conversion, and custom data transformations.

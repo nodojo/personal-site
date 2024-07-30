@@ -6,14 +6,14 @@
 - name: Culture
   href: /culture/
 
-- name: Linux
-  href: /linux/
+- name: Angular
+  href: /angular/
 
-- name: Front-end
-  href: /front-end/
+- name: SQL
+  href: /sql/
 
-- name: Flash Cards
-  href: /flashcards/
+- name: ASP.NET
+  href: /aspnet/
 
 # Don't display donation page: change donation to off at file '_config.yml'
 - name: Donate
