@@ -9,13 +9,19 @@ permalink: /life/
     /* initialize the jPages plugin */
     $("div.pag-holder").jPages({
         containerID  : "pag-itemContainer",
-        perPage      : 5,  /* num of items per page */
+        perPage      : 10,  /* num of items per page */
         startPage    : 1,
         startRange   : 1,
         midRange     : 3,
         endRange     : 1
     });
 
+    /*
+    *  to do list
+    *  - hide all answers other than the answer for the question that was clicked
+    *  - update responsive styles
+    *  - scaffold the flash card files in such a way so that there can be separate lists (ex: sql-specific, asp.net-specific, etc.) instead of one long list
+    */
     $('.ibox-content').on('click', function () {
       $(this).children('.vote-title').toggleClass('hidden');
     });
@@ -30,16 +36,16 @@ permalink: /life/
 </div>
 <div class="wrapper wrapper-content animated fadeInRight blog">
   <div class="row">
-    <ul id="pag-itemContainer" style="list-style:none;">
+    <ul id="pag-itemContainer" style="list-style:none; padding-left: 0;">
       {% assign counter = 0 %}
       {% for card in site.data.flash_cards %}
       {% assign counter = counter | plus: 1 %}
       <li>
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-8 col-lg-offset-2" style="padding-left: 0; padding-right: 0;">
               <div class="">
-                  <div class="ibox-content">
-                    <h2>{{ card.question }}</h2>
-                    <div class="vote-title hidden" style="margin-left: 0;">{{ card.answer }}</div>
+                  <div class="ibox-content" style="padding: 15px;">
+                    <h2 style="margin: 5px;">{{ card.question }}</h2>
+                    <div class="vote-title hidden" style="margin: 5px; font-size: 16px; font-weight: 400; padding-top: 5px;">{{ card.answer }}</div>
                   </div>
               </div>
           </div>
